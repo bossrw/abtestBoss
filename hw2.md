@@ -69,7 +69,7 @@ Ha (Alternative hypothesis) :  conv_per_red - conv_per_gold < 0\
 Test statistic Z = (conv_per_red - conv_per_gold - 0)/sqrt((pooled_variance^2)x( 1/59504 + 1/58944 )).\
 pooled_variance can be found by p(1-p) where p is total conversions of both red and gold devided by their click = (5901+6012)/(59504+58944) = 0.10057.
 
-Now compute Z = (0.099170-0.101995)/sqrt(0.10057(1-0.10057)(1/59504 + 1/58944)) = -1.616328. 
+Now compute Z = (0.099170-0.101995)/sqrt(0.10057(1-0.10057)(1/59504 + 1/58944)) = -1.616328.\
 Finally, compute p-value in this case, p-value = P(Z<-1.616328) = 0.05301.
 
 We can see that our p-value is less than significance level of 0.07 so we reject Null hypothesis in favor of Ha. This result in choosing gold package to run at 100% traffic.
