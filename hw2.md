@@ -49,26 +49,34 @@ Finally, compute p-value in this case, p-value = P(Z<-1.616328) = 0.05301.**
 
 5.2 What are the confidence intervals at 7% significance of conversion rates for Red and Gold? Show your work.
 
-**Finding confidence intervals at a% significance is finding the left and right border which give the area under pdf of the region = 1-0.01a
-We knew conversion rate of bith Red and Green is normally distributed. Let X be RV of standard normal distribution.**
+--------------------------------------------------------------------------------------------------------------------
 
-**First, we compute Z which make P(-Z < X < Z) = 1-0.01(7) = 0.93. This is equivalent to finding Z which make P(X < -Z) = 0.01(7)/2 resulted in Z = 1.8119.**
+**Solution 5.2**
 
-**Hence, we will find r1, r2 as left and right bound of interval of Red and g1, g2 as left and right bound of interval of Gold.
+Finding confidence intervals at a% significance is finding the left and right border which give the area under pdf of the region = 1-0.01a
+We knew conversion rate of bith Red and Green is normally distributed. Let X be RV of standard normal distribution.
+
+First, we compute Z which make P(-Z < X < Z) = 1-0.01(7) = 0.93. This is equivalent to finding Z which make P(X < -Z) = 0.01(7)/2 resulted in Z = 1.8119.
+
+Hence, we will find r1, r2 as left and right bound of interval of Red and g1, g2 as left and right bound of interval of Gold.
 We compute these by backward of doing standardize Normal dist.
-We know that conv_per is mean of each bernoulli. Along with LLN, this conv_per is close to real mean of bernoullis. Let p_red be probability of conversion success of that click in Red campaign. p_gold is same but for Gold campaign. Thus, p_red = 0.099170, p_gold = 0.101995. Follow that bernoulli RV with mean p has variance p(1-p) and with CLT,** 
+We know that conv_per is mean of each bernoulli. Along with LLN, this conv_per is close to real mean of bernoullis. Let p_red be probability of conversion success of that click in Red campaign. p_gold is same but for Gold campaign. Thus, p_red = 0.099170, p_gold = 0.101995. Follow that bernoulli RV with mean p has variance p(1-p) and with CLT,
 
-**variance of conv_per_red is p_red(1-p_red)/59504, mean of conv_per_red is 0.099170
-variance of conv_per_gold is p_gold(1-p_gold)/58944, mean of conv_per_gold is 0.101995**
+variance of conv_per_red is p_red(1-p_red)/59504, mean of conv_per_red is 0.099170
+variance of conv_per_gold is p_gold(1-p_gold)/58944, mean of conv_per_gold is 0.101995
 
-**Note that in standardize normal RV, Z = (X-mu)/sqrt(variance) -> X = mu + Z(sqrt(variance)). Now we really compute r1,r2,g1,g2.
+Note that in standardize normal RV, Z = (X-mu)/sqrt(variance) -> X = mu + Z(sqrt(variance)). Now we really compute r1,r2,g1,g2.
 r1 = 0.099170 + -1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.096949899
 r2 = 0.099170 + 1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.1013901
 g1 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.099736379
 g2 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.104253620**
 
-**To conclude, confidence intervals at 7% significance of conversion rates for Red is [0.096949899,0.1013901]
-confidence intervals at 7% significance of conversion rates for Gold is [0.099736379,0.104253620]**
+To conclude, confidence intervals at 7% significance of conversion rates for Red is [0.096949899,0.1013901]
+confidence intervals at 7% significance of conversion rates for Gold is [0.099736379,0.104253620]
+
+**End Solution 5.2**
+
+--------------------------------------------------------------------------------------------------------------------
 
 6. Which of the following are true about frequentist A/B tests? (True/False)
 
