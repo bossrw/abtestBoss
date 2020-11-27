@@ -57,13 +57,13 @@ For cohort-based conversion, the last row is also included since user C start vi
 
 4. Give 3 examples of values that are usually distributed in the following manner (do not use examples from class):
 
-* Bernoulli/Binomial distributions: ______, ______, ______
+* Bernoulli/Binomial distributions: **Head/Tail of coin**,**roll dice get six**, **gender of newborn**
 
-* Normal/Student t's distribution: ______, ______, ______
+* Normal/Student t's distribution: **weight of population**, **IQ score**, **cloth size**
 
-* Exponential distribution: ______, ______, ______
+* Exponential distribution: **time until a radio active particle decay**, **phone call duration**, **time it takes before next call**
 
-* Poisson distribution: ______, ______, ______
+* Poisson distribution: **number of suicide**, **protons arriving at a telescope**, **number of interval in a radioactive sample**
 
 5. Which variables should you control for in an A/B test of the following cases?
 
