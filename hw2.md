@@ -38,8 +38,8 @@ Given that the red package (existing group) has average rate of 11% but we know 
 
 The notation used in the equation to find number of sample is n be the number of samples of red package (control) and mn be the number of samples of gold package (test) where m is the numtiplier, in this case 0.25. mu is zero in our case since null hypothesis is that the mean of two groups are equal.
 
-Now we apply the equation n = ((m+1)/m) * (z_alpha * pooled_variance/MDE )^2 substitute with the corresponding value, 
-n = ((0.25+1)/0.25)x0.0979x(-1.0364333894937898/0.01)^2 = 5258.18. 
+Now we apply the equation n = ((m+1)/m) * (z_alpha * pooled_variance/MDE )^2 substitute with the corresponding value,\
+n = ((0.25+1)/0.25)x0.0979x(-1.0364333894937898/0.01)^2 = 5258.18.\
 Then 0.25n = 1314.54. 
 
 Thus, we will use about 5259 unique users to see red package and 1315 unique users to see gold package.
