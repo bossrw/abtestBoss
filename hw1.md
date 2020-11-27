@@ -43,9 +43,17 @@
 | 2020-11-30 | C    | visit    |
 | 2020-12-05 | C    | purchase |
 
-**For event-based conversion, the last row is purchasing in 12th month already so there is only 1 purchase and 3 unique users. Conversion rate is 1/3.**
+--------------------------------------------------------------------------------------------------------------------
 
-**For cohort-based conversion, the last row is also included since user C start visiting within 11th month and purchase within attribution period. Hence, there are 2 purchases and 3 unique users. Conversion rate is 2/3.**
+**Solution 3**
+
+For event-based conversion, the last row is purchasing in 12th month already so there is only 1 purchase and 3 unique users. Conversion rate is 1/3.
+
+For cohort-based conversion, the last row is also included since user C start visiting within 11th month and purchase within attribution period. Hence, there are 2 purchases and 3 unique users. Conversion rate is 2/3.
+
+**End Solution 3**
+
+--------------------------------------------------------------------------------------------------------------------
 
 4. Give 3 examples of values that are usually distributed in the following manner (do not use examples from class):
 
