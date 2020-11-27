@@ -14,15 +14,39 @@
 
 3. If we conduct a frequentist statistical test at 5% significance level repeatedly for 4,000 times, how many times can we expect to have statistically significant results even if group A and B are exactly the same?
 
-**Since the x% significance level means if we do the test repeatedly 100 times, We will wrongly reject Null Hypothesis x times. This means that for this scenario, we will have statistically significant even if group A and B are exactly the same about (5/100)x4000 = 200 times.**
+--------------------------------------------------------------------------------------------------------------------
+
+**Solution 3**
+
+Since the x% significance level means if we do the test repeatedly 100 times, We will wrongly reject Null Hypothesis x times. This means that for this scenario, we will have statistically significant even if group A and B are exactly the same about (5/100)x4000 = 200 times.
+
+**End Solution 3**
+
+--------------------------------------------------------------------------------------------------------------------
 
 4. Hamster Inc. once again wants to test the conversion rates between package colors of its sunflower seeds; this time it is Red Package vs Gold Package. The Red Package is the existing group with average conversion rate of 11%. If they think the minimum detectable effect is 1% and want to make a 80/20 control/test split, how many unique users should see each package color before we decide which one performs better? Assume that they are testing at significance level of 15%. Show your work.
 
-**We use MDE here to find the number samples of each group. Since they test at significant level of 15% and the test is one-tail. ( The rejection area is on the left tail. )  
+--------------------------------------------------------------------------------------------------------------------
+
+**Solution 4**
+
+We use MDE here to find the number samples of each group. Since they test at significant level of 15% and the test is one-tail. (The rejection area is on the left tail.)
+
 By using scipy.stats.norm in python, we found the z value which gives the cdf of 0.15 by z_alpha = norm.ppf(0.15) = -1.0364333894937898. 
-Given that the red package (existing group) has average rate of 11% but we know that each conversion rate RV is Bernoulli, with mean p, variance is p(1-p). Hence, We have the pooled sample variance of 0.11(1-0.11) = 0.0979. (here we use the existing variance to be the pooled one.) 
+
+Given that the red package (existing group) has average rate of 11% but we know that each conversion rate RV is Bernoulli, with mean p, variance is p(1-p). Hence, We have the pooled sample variance of 0.11*(1-0.11) = 0.0979. (here we use the existing variance to be the pooled one.)
+
 The notation used in the equation to find number of sample is n be the number of samples of red package (control) and mn be the number of samples of gold package (test) where m is the numtiplier, in this case 0.25. mu is zero in our case since null hypothesis is that the mean of two groups are equal.
-Now we apply the equation n = ((m+1)/m) x (z_alpha x pooled_variance/MDE)^2 substitute with the corresponding value, n = ((0.25+1)/0.25)x0.0979x(-1.0364333894937898/0.01)^2 = 5258.18. Then 0.25n = 1314.54. Thus, we will use about 5259 unique users to see red package and 1315 unique users to see gold package.**
+
+Now we apply the equation n = ((m+1)/m) * (z_alpha * pooled_variance/MDE )^2 substitute with the corresponding value, 
+n = ((0.25+1)/0.25)x0.0979x(-1.0364333894937898/0.01)^2 = 5258.18. 
+Then 0.25n = 1314.54. 
+
+Thus, we will use about 5259 unique users to see red package and 1315 unique users to see gold package.
+
+**End Solution 4**
+
+--------------------------------------------------------------------------------------------------------------------
 
 5. Let us say Hamster Inc. ran the experiment and got the following results. 
 
@@ -72,7 +96,7 @@ g1 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.099736379.\
 g2 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.104253620.
 
 To conclude, confidence intervals at 7% significance of conversion rates for Red is [0.096949899,0.1013901]\
-confidence intervals at 7% significance of conversion rates for Gold is [0.099736379,0.104253620]\
+confidence intervals at 7% significance of conversion rates for Gold is [0.099736379,0.104253620]
 
 **End Solution 5.2**
 
@@ -82,16 +106,16 @@ confidence intervals at 7% significance of conversion rates for Gold is [0.09973
 
 * [**True**] It does not tell us the magnitude of the difference between control and test groups.
 
-* [ ] We can never know when to stop the experiments.
+* [**False**] We can never know when to stop the experiments.
 
-* [ ] We can never determine if the null hypothesis being true.
+* [**True**] We can never determine if the null hypothesis being true.
 
-* [ ] We can run one or as many experiments as we want using the same significance level.
+* [**False**] We can run one or as many experiments as we want using the same significance level.
 
-* [ ] If we have too many samples in each group, the validity of the test can be jeopardized.
+* [**True**] If we have too many samples in each group, the validity of the test can be jeopardized.
 
-* [ ] If you have set up the experiment based on desired minimum detectable effect and significance level, statististical significance is the only factor in determining which group is the better one.
+* [**False**] If you have set up the experiment based on desired minimum detectable effect and significance level, statististical significance is the only factor in determining which group is the better one.
 
-* [ ] We can only test difference between two proportions.
+* [**True**] We can only test difference between two proportions.
 
-* [ ] More samples in control and test groups are always better.
+* [**False**] More samples in control and test groups are always better.
