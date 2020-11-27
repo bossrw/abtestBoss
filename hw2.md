@@ -66,10 +66,10 @@ variance of conv_per_red is p_red(1-p_red)/59504, mean of conv_per_red is 0.0991
 variance of conv_per_gold is p_gold(1-p_gold)/58944, mean of conv_per_gold is 0.101995
 
 Note that in standardize normal RV, Z = (X-mu)/sqrt(variance) -> X = mu + Z(sqrt(variance)). Now we really compute r1,r2,g1,g2.
-r1 = 0.099170 + -1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.096949899
-r2 = 0.099170 + 1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.1013901
-g1 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.099736379
-g2 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.104253620**
+r1 = 0.099170 + -1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.096949899.
+r2 = 0.099170 + 1.8119(sqrt(0.099170(1-0.099170)/59504)) = 0.1013901.
+g1 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.099736379.
+g2 = 0.101995 + -1.8119(sqrt(0.101995(1-0.101995)/58944)) = 0.104253620.**
 
 To conclude, confidence intervals at 7% significance of conversion rates for Red is [0.096949899,0.1013901]
 confidence intervals at 7% significance of conversion rates for Gold is [0.099736379,0.104253620]
